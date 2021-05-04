@@ -1,6 +1,7 @@
+import { IAutomovel } from './automovel';
 import { CarroModelo } from './modelo';
 
-export class Carro /* implements IAutomovel */ {
+export class Carro implements IAutomovel {
     private _modelo?: CarroModelo;
 
     constructor() {
@@ -11,6 +12,9 @@ export class Carro /* implements IAutomovel */ {
     frear(): void {
     }
     acenderFarol(): void {
+    }
+    ativarNitro(): void{
+        
     }
 
     get modelo() {

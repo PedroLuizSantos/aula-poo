@@ -9,4 +9,15 @@ if (environment.production) {
 }
 
 platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
+  .catch((err: any) => console.error(err));
+
+
+function fna(parm1: string, parm2: string) {
+  return parm1 + parm2
+}
+
+const a = (parm1: string, parm2: string) => {
+  parm1 + parm2
+}
+
+fna('', '')
