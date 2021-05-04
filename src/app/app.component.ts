@@ -12,7 +12,6 @@ import { Processador } from 'src/models/processador';
 })
 export class AppComponent {
 
-
   automoveis: Array<IAutomovel> = [];
 
   acelerar() {
@@ -76,7 +75,7 @@ class CarroTurbo implements IAutomovel {
   private _nitro_ativo: boolean;
 
   constructor(_velocidade: number) {
-    this._velocidade = 0;
+    this._velocidade = _velocidade;
     this._frear = 0;
     this._nitro_ativo = false;
     this._farol_ativo = false;
